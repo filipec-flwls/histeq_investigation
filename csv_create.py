@@ -1,7 +1,7 @@
 import csv
 import os
 
-data = ["ufof01_ep01_pt15_0260","ufof01_ep01_pt15_0270","ufof01_ep01_pt17_0690","ufof01_ep01_pt18_0050","ufof01_ep01_pt18_0060","ufof01_ep01_pt18_0180",'ufof01_ep01_pt18_0190', "ufof01_ep01_pt18_0240", 'ufof01_ep01_pt40_0060', 'ufof01_ep01_pt47_0030','ufof01_ep01_pt49_0190', 'ufof01_ep01_pt49_0570', 'ufof01_ep01_pt55_0050', 'ufof01_ep01_pt56_0070', 'ufof01_ep01_pt63_0560']
+data = ["']
 
 output_directory = '/Volumes/shared/vfx/filipe.correia/pulls/Hist_EQ/csv'
 file_name = 'shot_context2.csv'
