@@ -13,8 +13,10 @@ def hist_eq_process_adapt(image_path: Path, out_path: Path, target_resolution: t
     image = cv2.imread(str(image_path), cv2.IMREAD_UNCHANGED )
     
     """____________Converts Image____________"""
+    # normalize
     image = ((image - image.min()) / (image.max() - image.min()))
-    image = skimage.exposure.equalize_adapthist(image, kernel_size=256*2, nbins=256*500)
+    # adaptive histogram equalization equalize 
+    image = skimage.exposure.equalize_adapthist(image, kernel_size=256*2, nbins=255*255)
     image = np.clip(np.round(image * 255), 0, 255).astype(np.uint8)
     
     """____________Resize Image____________"""
