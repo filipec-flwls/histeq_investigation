@@ -64,8 +64,8 @@ if __name__ == '__main__':
     in_ext = "jpg"
     out_ext = "jpg"
     target_resolution = (2578, 1080)
-    input_dir = sorted(list(Path('/Volumes/shared/vfx/filipe.correia/Elements/hist_eq_tests/input').iterdir()))
-    csv_file_path = Path('/Volumes/shared/vfx/filipe.correia/pulls/Hist_EQ/csv/shot_context.csv')
+    input_dir = sorted(list(Path('add/input').iterdir()))
+    csv_file_path = Path('shot_context.csv')
     csv_data = pd.read_csv(csv_file_path)
     
     for shot_dirs in input_dir:
