@@ -31,3 +31,6 @@ Only one method at the time so having only one option is important to start each
         # hist_eq_process_gamma_split(image_path, out_path, target_resolution)
         # hist_eq_process_gamma_split_lum(image_path, out_path, target_resolution)
 ```
+## Run Script
+
+Once done with the changes, run the main.py script
