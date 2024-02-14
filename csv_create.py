@@ -3,8 +3,8 @@ import os
 
 data = ["']
 
-output_directory = '/Volumes/shared/vfx/filipe.correia/pulls/Hist_EQ/csv'
-file_name = 'shot_context2.csv'
+output_directory = 'output'
+file_name = 'shot_context.csv'
 output_path = os.path.join(output_directory, file_name)
 
 # Add a header to the CSV file
