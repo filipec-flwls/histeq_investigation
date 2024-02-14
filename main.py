@@ -18,10 +18,7 @@ def read_input_create_output_folder(shot_dirs: Path, in_ext: str, out_ext: str, 
     
     cct_img_dir = shot_dirs / 'cct'
     cct_img_paths = sorted(cct_img_dir.glob(f"*.{out_ext}"))
-    # print(cct_img_paths)
-    # print(type(cct_img_paths))
-    # # print(image_paths)
-    # print(type(image_paths))
+    
     for image_path in image_paths:
         cct_img_path = next(path for path in cct_img_paths if path.stem == image_path.stem)
         out_path = out_dir_path / f"{image_path.stem}.{out_ext}"
